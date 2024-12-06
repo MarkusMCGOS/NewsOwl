@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../tailwindcss.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <title>News Coverage</title>
+</head>
+
+<body>
+  <!-- WASSUP GUYS ITS PYTHON HERE -->
+  <main class="bg-zinc-900 min-h-screen" role="main" aria-label="Election News Coverage">
+    <header class="mb-8" role="banner">
+      <div class="flex items-center justify-center p-4 bg-white">
+        <a href="../index.html">
+          <img src="../NewsOwl.png" alt="NewsOwl Logo" class="w-96">
+        </a>
+      </div>
+
+      <div class="bg-zinc-600 p-4 w-full" role="complementary" aria-label="Live Election Results">
+        <div class="flex items-center gap-4">
+          <div class="bg-red-800 px-4 py-2 items-center gap-2 md:flex hidden" role="status" aria-live="polite">
+            <span class="w-4 h-4 bg-zinc-300 rounded-full blink" aria-hidden="true"></span>
+            <span class="text-white font-bold">LIVE</span>
+          </div>
+      
+          <div class="flex items-center justify-center flex-wrap text-white xl:text-2xl text-xl font-semibold mx-auto text-center">
+            <!-- PRESIDENT -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Presidential Results">
+                PRESIDENT: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">312</span>, <span class="text-blue-800">226</span>)
+              </span>
+            </div>
+            <!-- HOUSE -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="House Results">
+                HOUSE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">220</span>, <span class="text-blue-800">215</span>)
+              </span>
+            </div>
+            <!-- SENATE -->
+            <div class="flex items-center justify-center mr-6">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Senate Results">
+                SENATE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">53</span>, <span class="text-blue-800">47</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-gray-400 p-8 mx-auto max-w-4xl" role="article" aria-label="News Article">
+        <div class="mx-auto">
+          <h1 class="text-4xl font-bold mb-4">EXPLAINER: What are Electoral College votes?
+        </h1>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>By Luis Costa</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>Edited by Markus Lau</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-6">
+            <span>12/05/2024</span>
+          </div>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            When watching the U.S. election, you need to understand what electoral college votes are as they determine the winner of the election. This Explainer article by NewsOwl will explain it all for you. Let's start with how electoral votes are calculated, per-state.
+          </p>
+          <h1 class="text-3xl font-bold mb-4">House of Representatives</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Imagine Washington state. Washington awards 12 points for the candidate that gets a majority vote in the state. The state of Washington is divided into 10 congressional districts. When it comes to Election Day, people living in those districts come out to vote for a Representative. The elected Representative by the people then goes to the House of Representatives. The House of Representatives, informally known as the House, is where all these Representatives, elected by the people in the district they represent, meet to vote on laws. Every 10 years, there is a Consensus; the Consensus is when the government counts the population of areas in the US. After the Consensus, the government changes the borders of congressional districts, or splits and merges some congressional districts based on the population of the area.
+What you need to know is that a state's electoral college votes are defined by the number of congressional districts +2 (senators).
+
+          </p>
+          <h1 class="text-3xl font-bold mb-4">Districts into Votes</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            A candidate must win <span class="font-bold underline">at least</span> 270 electoral college votes to win a presidential election. There are a total of 538 electoral college votes.
+
+          </p>
+          <h1 class="text-3xl font-bold mb-4">2024 Presidential Election</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The fact is that every election there are many key states: also known as swing states. Those states are usually the deciding “win” factors for a candidate in the election. In the 2024 election, the swing states were Arizona, Nevada, Michigan, Pennsylvania, North Carolina and Georgia. Trump managed to win all 7 of them. <a href="this-is-why-trump-won-the-2024-us-election.html" class="text-blue-700 underline hover:text-blue-800">
+              See our Opinion article on why.
+            </a>
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            A state is nominated as a key state if polling has shown that neither candidate has a large advantage over the other.
+
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Every election, a candidate must win at least 270 electoral votes, and many key states are crucial to a candidate's win.
+
+          </p>
+        </div>
+      </section>
+    
+  </main>
+  </main>
+</body>
+
+</html>

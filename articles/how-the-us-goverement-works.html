@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../tailwindcss.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <title>News Coverage</title>
+</head>
+
+<body>
+  <!-- WASSUP GUYS ITS PYTHON HERE -->
+  <main class="bg-zinc-900 min-h-screen" role="main" aria-label="Election News Coverage">
+    <header class="mb-8" role="banner">
+      <div class="flex items-center justify-center p-4 bg-white">
+        <a href="../index.html">
+          <img src="../NewsOwl.png" alt="NewsOwl Logo" class="w-96">
+        </a>
+      </div>
+
+      <div class="bg-zinc-600 p-4 w-full" role="complementary" aria-label="Live Election Results">
+        <div class="flex items-center gap-4">
+          <div class="bg-red-800 px-4 py-2 items-center gap-2 md:flex hidden" role="status" aria-live="polite">
+            <span class="w-4 h-4 bg-zinc-300 rounded-full blink" aria-hidden="true"></span>
+            <span class="text-white font-bold">LIVE</span>
+          </div>
+      
+          <div class="flex items-center justify-center flex-wrap text-white xl:text-2xl text-xl font-semibold mx-auto text-center">
+            <!-- PRESIDENT -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Presidential Results">
+                PRESIDENT: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">312</span>, <span class="text-blue-800">226</span>)
+              </span>
+            </div>
+            <!-- HOUSE -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="House Results">
+                HOUSE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">220</span>, <span class="text-blue-800">215</span>)
+              </span>
+            </div>
+            <!-- SENATE -->
+            <div class="flex items-center justify-center mr-6">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Senate Results">
+                SENATE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">53</span>, <span class="text-blue-800">47</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-gray-400 p-8 mx-auto max-w-4xl" role="article" aria-label="News Article">
+        <div class="mx-auto">
+          <h1 class="text-4xl font-bold mb-4">EXPLAINER: How the U.S. Government Works</h1>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>By Adam Shen</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>Contributions and Edits by Markus Lau</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-6">
+            <span>12/05/2024</span>
+          </div>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The U.S. government has a very distinct structure. It has 3 branches created by the constitution, which each control a separate part of the government. The constitution also states that all 3 branches must have equal power for balance. The branches are the legislative branch, executive branch, and judicial branch. 
+          </p>
+
+          
+            <h1 class="text-3xl font-bold mb-4">Legislative</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The legislative branch uses a bicameral system, meaning that it comprises two chambers, the House and the Senate. The legislative branch’s main purpose is to create and pass laws, approve budgets and foreign policies, monitor other branches, and manage the armed forces.
+          </p>
+
+          <!-- The House of Representatives -->
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">The House of Representatives</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            There are a total of 435 members, with the number of representatives based on the population of their state—for example, California has 52, meanwhile Wyoming, with a much smaller population, only has 1 person as their representative. Each representative serves 2 year terms, with the ability to re-run indefinitely every other year. These are the requirements to be a representative:
+          </p>
+          <ul class="list-disc ml-8">
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must be at least 25 years old</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must have been a U.S. citizen for at least 7 years</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must be a resident of the state they represent</li>
+          </ul>
+          <p class="text-lg leading-relaxed mb-6 font-bold">
+            Responsibilities exclusive to the House:
+          </p>
+          <ul class="list-disc ml-8">
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Initiate revenue bills, tax bills and budget bills</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Initate impeachment of federal officials (including the President)</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Elect the President in case of an electoral college tie</li>
+          </ul>
+          <!-- END OF HOUSE OF REPRESENTATIVES -->
+
+          <!-- The Senate -->
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">The Senate</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            There are a total of 100 members in the Senate, with 2 senators per state, no matter the population. Each senator serves 6 year terms, also with the ability to re-run indefinitely. However, every other year, a third of the Senate is up for grabs. The Vice President is the head of the Senate, but may only cast a vote for a tie-breaker. To run for Senate, you must:
+          </p>
+          <ul class="list-disc ml-8">
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must be at least 30 years old</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must have been a U.S. citizen for at least 9 years</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Must be a resident of the state they represent</li>
+          </ul>
+          <p class="text-lg leading-relaxed mb-6 font-bold">
+            Responsibilities exclusive to the Senate:
+          </p>
+          <ul class="list-disc ml-8">
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Approve treaties</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Approve presidential appointments</li>
+            <li class="text-lg leading-relaxed mb-6 font-semibold">Try impeached officials</li>
+          </ul>
+          <!-- END OF THE SENATE -->
+
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Both chambers of the Legislative Branch have a large ability and responsibility. They can tax, declare war, regulate foreign affairs, and establish laws.
+          </p>
+
+          <h1 class="text-3xl font-bold mb-4">Executive</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The president heads the Executive Branch, and has unique abilities. For example, they can give executive orders, make vetoes on bills passed by Congress and appoint federal judges and heads of federal agencies (president's cabinet). However, the Senate must vote to actually confirm those members of the president's cabinet, to ensure transparency and balance.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The president serves a 4 year term, with the ability to re-run for a second term. The president must be at least 35 years old, a natural born citizen, and have lived in the U.S. for at least 14 years.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The president is also the Commander in Chief of the armed forces, and can make treaties with other countries. However, the Senate must approve those treaties.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            If the president is unable to continue to be president for any reason—death, sickness, or for another reason, there is a line of command to be the next President. First is the Vice President, then the Speaker of the House, then the president of the Senate, then the cabinet members down the line.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The president can also be impeached by the House of Representatives, and then tried by the Senate. If the Senate finds the president guilty, they are removed from office.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-bold">
+            The Executive Branch includes:
+          </p>
+          <ul class="list-disc ml-8">
+            <li class="text-lg leading-relaxed mb-6 font-bold">
+              The President
+              <ul class="list-disc ml-8 mt-4">
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Head of the Executive Branch</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Commander in Chief of the Armed Forces</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Head of State</li>
+              </ul>
+            </li>
+            <li class="text-lg leading-relaxed mb-6 font-bold">
+              The Vice President
+              <ul class="list-disc ml-8 mt-4">
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Casts vote in Senate in the event of a tie</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Supports the President</li>
+              </ul>
+            </li>
+            <li class="text-lg leading-relaxed mb-6 font-bold">
+              The Cabinet
+              <ul class="list-disc ml-8 mt-4">
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Appointed by the President</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">Confirmed by the Senate</li>
+                <li class="text-lg leading-relaxed mb-6 font-bold">
+                  Includes:
+                  <ul class="list-disc ml-8 mt-4">
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of State</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Defense</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of the Treasury</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Attorney General</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of the Interior</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Agriculture</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Commerce</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Labor</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Health and Human Services</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Housing and Urban Development</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Transportation</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Energy</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Education</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Veterans Affairs</li>
+                    <li class="text-lg leading-relaxed mb-6 font-semibold">Secretary of Homeland Security</li>
+                  </ul>
+                </li>
+            </li>
+            <li class="text-lg leading-relaxed mb-6 font-bold">
+              Federal Agencies
+              <br>
+              <ul class="list-disc ml-8 mt-4">
+                <li class="text-lg leading-relaxed mb-6 font-semibold">FBI (Federal Bureau of Investigations)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">CIA (Central Intelligence Agency)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">NSA (National Security Agency)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">EPA (Environmental Protection Agency)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">FDA (Food and Drug Administration)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">CDC (Center for Disease Control)</li>
+                <li class="text-lg leading-relaxed mb-6 font-semibold">NASA (National Aeronautics and Space Administration)</li>
+              </ul>
+            </li>
+          </ul>
+
+        </li>
+      </ul>
+            
+          <h1 class="text-3xl font-bold mb-4 ml-0">Judicial</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The Judicial branch's function can be described in one word: court. Its structure primarily comprises federal courts and judges.
+          </p>
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">Supreme Court</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The Supreme Court is the court with the highest legal authority in the country.The Supreme Court (aka Supreme Court of the United States (SCOTUS)) is composed of 1 Chief Justice and 8 Associate Justices. The Chief Justice’s role is to lead court cases, maintain order in the court, and oversee cases. The Associate Justice’s role is to discuss, deliberate, and cast votes. If a majority of 5 is reached, then the case is resolved. The cases that the Supreme Court discusses are mostly ones with significant legal or constitutional issues that cannot be resolved by a lower court.
+          </p>
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">Court of Appeals</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Next in power are the Court of Appeals, with 13 spread throughout the country. It is important to remember that the courts of appeals do not actually hear new cases. Instead, they review lower court trials to ensure that the law was applied correctly. 
+          </p>
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">District Courts</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Then, the district courts. There are 94 district courts, with at least one in each state and territory (such as Puerto Rico, Guam, etc.). These courts can also be referred to as "regular courts" because they are where federal cases are primarily heard.
+          </p>
+          <h2 class="text-xl leading-relaxed mb-6 font-bold">Special Courts</h2>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            Finally, there are Special Courts. These courts handle specific types of cases rather than general cases. For example, a tax court only deals with tax-related cases and not anything else. 
+One of the main reasons special courts exist is because of efficiency; when a court specializes in a certain type of case, it becomes more efficient at handling complex issues.
+
+          </p>
+          <br>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The US government is governed under the constitution, allowing balance in power while maintaining its function and efficiency. The branches include: the legislative branch (law), the executive branch (command), and the judicial branch (court). 
+          </p>
+        </div>
+      </section>
+    
+  </main>
+  </main>
+</body>
+
+</html>

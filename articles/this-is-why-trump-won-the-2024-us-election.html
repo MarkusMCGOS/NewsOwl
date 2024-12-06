@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../tailwindcss.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <title>News Coverage</title>
+</head>
+
+<body>
+  <!-- WASSUP GUYS ITS PYTHON HERE -->
+  <main class="bg-zinc-900 min-h-screen" role="main" aria-label="Election News Coverage">
+    <header class="mb-8" role="banner">
+      <div class="flex items-center justify-center p-4 bg-white">
+        <a href="../index.html">
+          <img src="../NewsOwl.png" alt="NewsOwl Logo" class="w-96">
+        </a>
+      </div>
+
+      <div class="bg-zinc-600 p-4 w-full" role="complementary" aria-label="Live Election Results">
+        <div class="flex items-center gap-4">
+          <div class="bg-red-800 px-4 py-2 items-center gap-2 md:flex hidden" role="status" aria-live="polite">
+            <span class="w-4 h-4 bg-zinc-300 rounded-full blink" aria-hidden="true"></span>
+            <span class="text-white font-bold">LIVE</span>
+          </div>
+      
+          <div class="flex items-center justify-center flex-wrap text-white xl:text-2xl text-xl font-semibold mx-auto text-center">
+            <!-- PRESIDENT -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Presidential Results">
+                PRESIDENT: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">312</span>, <span class="text-blue-800">226</span>)
+              </span>
+            </div>
+            <!-- HOUSE -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="House Results">
+                HOUSE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">220</span>, <span class="text-blue-800">215</span>)
+              </span>
+            </div>
+            <!-- SENATE -->
+            <div class="flex items-center justify-center mr-6">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Senate Results">
+                SENATE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">53</span>, <span class="text-blue-800">47</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-gray-400 p-8 mx-auto max-w-4xl" role="article" aria-label="News Article">
+        <div class="mx-auto">
+          <h1 class="text-4xl font-bold mb-4">OPINION: This is why Trump won the 2024 U.S. Election</h1>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>By Adam Shen</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>Contributions and Edits by Markus Lau</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-6">
+            <span>12/05/2024</span>
+          </div>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            The US election has recently concluded, and Donald Trump has won the 2024 US election. He is now the 47th president of the United States, contrary to news poll predictions. But how did this happen?
+          </p>
+
+          
+        <ol class="list-decimal list-inside">
+            <li class="mb-4 text-xl">
+                America's readiness for a woman to be president
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    According to a poll by the Pew Research Center, it showed that around 47% of women feel that a woman president would be better at “working out compromises”, which is more than the 30% of men. This shows that a percent of America is still uncertain about the fact of a woman being president.
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    Armed with this fact, we can safely assume that some people chose Donald Trump not because of liking his policies or personality, but because they aren't ready for a woman to be president.
+                </p>
+            </li>
+            <li class="mb-4 text-xl">
+                Harris's connection to Biden's campaign
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    President Biden faced lots of criticism during his time in office. Many people were concerned about the inflation that grew while he was in office, or the policies around immigration and the border, among other things.
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    When Kamala's campaign first started, she went to the ABC's “The View” to get voters to know her better. However, when she was asked how she would space herself from the Biden campaign, she said: “Not a thing that comes to mind”. That was a fatal flaw, as Biden only had an average of 40% approval rating. 
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    In the end, she wasn't able to space herself far away enough from the Biden campaign, causing her to probably lose many millions of votes.
+                </p>
+            </li>
+            <li class="mb-4 text-xl">
+                Trump's campaign strategy
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    In many of Trump's speeches, he has claimed that America is on a downward trend and will fall to the hands of the enemies. By saying things like this, he is driving fear into his supporters and other voters. 
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    If someone says that the world is about to get destroyed by an asteroid, and claims that they have a way to prevent that from happening, I probably wouldn't believe them. But if they repeat it many times, and there are many people around me believing them, I might also slowly start to get convinced. That could possibly be one of Trump's strategies; to make himself look like the hero that can save the country, encouraging people to vote for him.
+                </p>
+            </li>
+            <li class="mb-4 text-xl">
+                Following through with promises
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    On the day before the election, November 4, a national NPR/PBS/Marist poll concluded that Kamala Harris holds a slight edge over Donald Trump among likely voters. However, many undecided voters aren't convinced whether or not Harris will actually follow through with her policies. 
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    Due to this, many people either didn't vote, or voted for Trump because they didn't get to know her well enough.
+                </p>
+            </li>
+            <li class="mb-4 text-xl">
+                The economic state
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    For many years, some people have been annoyed at the poor economy. Things like inflation, wages, and employment have put many people in a sour mood. According to an ABC/Ipsos poll, approximately 76% of Americans believe that the economy is going in the wrong direction. Also, considering that the Republican Party has very strong policies about fixing the economy, many people would already be leaning towards Trump.
+                </p>
+                <p class="text-lg font-semibold ml-8 mt-2">
+                    Connecting back to the beginning, it was during the Biden Administration when things went south, so Biden's approval rate is only at 40%. In addition, Harris wasn't able to separate herself away from Biden well enough, as stated in point 2.
+                </p>
+            </li>
+        </ol>
+        <p class="text-lg leading-relaxed mb-6 font-semibold">
+            There are several main reasons on how Trump won the 2024 US Election, contrary to news poll predictions. Sometimes, things won't always go the way they seem to be heading, such as in 2016, with Hillary Clinton. Thanks for reading this NewsOwl Opinion article.
+        </p>
+        </div>
+      </section>
+    
+  </main>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="tailwindcss.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <title>News Coverage</title>
+</head>
+
+<body>
+  <!-- WASSUP GUYS ITS PYTHON HERE -->
+  <main class="bg-zinc-900 min-h-screen" role="main" aria-label="Election News Coverage">
+    <header class="mb-8" role="banner">
+      <div class="flex items-center justify-center p-4 bg-white">
+        <img src="NewsOwl.png" alt="NewsOwl Logo" class="w-96">
+      </div>
+
+      <div class="bg-zinc-600 p-4 w-full" role="complementary" aria-label="Live Election Results">
+        <div class="flex items-center gap-4">
+          <div class="bg-red-800 px-4 py-2 items-center gap-2 md:flex hidden" role="status" aria-live="polite">
+            <span class="w-4 h-4 bg-zinc-300 rounded-full blink" aria-hidden="true"></span>
+            <span class="text-white font-bold">LIVE</span>
+          </div>
+
+          <div
+            class="flex items-center justify-center flex-wrap text-white xl:text-2xl text-xl font-semibold mx-auto text-center">
+            <!-- PRESIDENT -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                </span>
+              </div>
+              <span aria-label="Presidential Results">
+                PRESIDENT: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">312</span>, <span class="text-blue-800">226</span>)
+              </span>
+            </div>
+            <!-- HOUSE -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                </span>
+              </div>
+              <span aria-label="House Results">
+                HOUSE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">220</span>, <span class="text-blue-800">215</span>)
+              </span>
+            </div>
+            <!-- SENATE -->
+            <div class="flex items-center justify-center mr-6">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                </span>
+              </div>
+              <span aria-label="Senate Results">
+                SENATE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">53</span>, <span class="text-blue-800">47</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid lg:grid-cols-12 grid-cols-4 gap-12 p-8" role="region" aria-label="Featured News Articles">
+      <article class="2xl:col-span-7 col-span-6 col-span-4 bg-neutral-700 p-6 shadow-lg" role="article">
+        <a href="articles/what-are-electoral-college-votes.html">
+        <div class="flex items-start gap-2 mb-4">
+          <div class="bg-red-800 px-3 py-1 flex items-center gap-2">
+            <span class="w-5 h-5 bg-zinc-300 rounded-full" aria-hidden="true"></span>
+            <span class="text-white font-bold">Explainer</span>
+          </div>
+        </div>
+
+        
+          <h2 class="text-3xl font-bold text-white mb-4">
+            WHAT ARE ELECTORAL COLLEGE VOTES?
+          </h2>
+        
+
+        <p class="text-white mb-6">
+          Electoral college votes—explained.
+        </p>
+
+        <div class="bg-red-800 text-white font-bold px-5 py-3 inline-block">
+          POLITICS
+        </div>
+
+        <img
+          src="img/electoral-college.png"
+          alt="Electoral College voting system diagram" class="w-full mt-20 aspect-video object-cover" />
+        </a>
+        </article>
+
+      <div class="grid grid-rows-2 gap-12 2xl:col-span-5 xl:col-span-6 lg:col-span-6 col-span-6">
+        <article class="bg-neutral-700 p-6 shadow-lg " role="article">
+        <a href="articles/how-the-us-goverement-works.html">
+          <div class="flex items-start gap-2 mb-4">
+            <div class="bg-red-800 px-3 py-1 flex items-center gap-2">
+              <span class="w-5 h-5 bg-zinc-300 rounded-full" aria-hidden="true"></span>
+              <span class="text-white font-bold">Explainer</span>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div>
+              <h2 class="text-2xl font-bold text-white mb-4">
+                THE STRUCTURE OF THE U.S. GOVERNMENT
+              </h2>
+
+              <p class="text-white mb-6">
+                A breakdown of the U.S. Government: how it works and what it does.
+              </p>
+
+              <div class="bg-red-800 text-white font-bold px-5 py-3 inline-block">
+                POLITICS
+              </div>
+            </div>
+
+            <img
+              src="https://viterbischool.usc.edu/wp-content/uploads/2017/01/white-house-square.jpg"
+              alt="The White House" class="w-1/2 object-cover lg:block hidden" />
+          </div>
+          <img
+            src="https://viterbischool.usc.edu/wp-content/uploads/2017/01/white-house-square.jpg"
+            alt="The White House" class="w-full mt-20 object-cover lg:hidden block" />
+        </a>
+        </article>
+
+        <article class="bg-neutral-700 p-6 shadow-lg " role="article">
+          <a href="articles/this-is-why-trump-won-the-2024-us-election.html">
+          <div class="flex items-start gap-2 mb-4">
+            <div class="bg-red-800 px-3 py-1 flex items-center gap-2">
+              <span class="w-5 h-5 bg-yellow-500 rounded-full" aria-hidden="true"></span>
+              <span class="text-white font-bold">Opinion</span>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div>
+              <h2 class="text-2xl font-bold text-white mb-4">
+                THIS IS WHY TRUMP WON THE U.S. ELECTION
+              </h2>
+
+              <p class="text-white mb-6">
+                An opinion, based on facts, on why Trump won the 2024 U.S. Election.
+              </p>
+
+              <div class="bg-red-800 text-white font-bold px-5 py-3 inline-block">
+                POLITICS
+              </div>
+            </div>
+
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d988c88c68403349745a0a1b201484fbccae02baa5ca6f78d1fb79274c6b24fc?placeholderIfAbsent=true&apiKey=32b758bd0ebe4a36a06b178b4e47a5fb"
+              alt="Presidential comparison analysis" class="w-1/2 object-cover lg:block hidden" />
+          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/d988c88c68403349745a0a1b201484fbccae02baa5ca6f78d1fb79274c6b24fc?placeholderIfAbsent=true&apiKey=32b758bd0ebe4a36a06b178b4e47a5fb"
+            alt="Presidential comparison analysis" class="w-full mt-20 object-cover lg:hidden block" />
+          </a>
+          </article>
+      </div>
+
+      <article class="col-span-6 bg-neutral-700 p-6 shadow-lg lg:col-span-6 col-span-4" role="article">
+        <a href="articles/key-issues-at-play-in-the-2024-us-election.html">
+        <div class="flex items-start gap-2 mb-4">
+          <div class="bg-red-800 px-3 py-1 flex items-center gap-2">
+            <span class="w-5 h-5 bg-zinc-300 rounded-full" aria-hidden="true"></span>
+            <span class="text-white font-bold">Explainer</span>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4">
+              KEY ISSUES AT PLAY IN THE 2024 U.S. ELECTION
+            </h2>
+
+            <p class="text-white mb-6">
+              A breakdown of the key issues at play in the 2024 U.S. Election.
+            </p>
+
+            <div class="bg-red-800 text-white font-bold px-5 py-3 inline-block">
+              POLITICS
+            </div>
+          </div>
+
+          <img
+            src="img/key-issues.png"
+            alt="Presidential comparison analysis" class="w-1/2 object-cover lg:block hidden" />
+        </div>
+        <img
+          src="img/key-issues.png"
+          alt="Presidential comparison analysis" class="w-full mt-20 object-cover lg:hidden block" />
+        </a>
+      </article>
+
+      <article class="col-span-6 bg-neutral-700 p-6 shadow-lg lg:col-span-6 col-span-4" role="article">
+        <a href="articles/short-and-long-term-impacts-of-the-2024-us-election.html">
+        <div class="flex items-start gap-2 mb-4">
+          <div class="bg-red-800 px-3 py-1 flex items-center gap-2">
+            <span class="w-5 h-5 bg-yellow-500 rounded-full" aria-hidden="true"></span>
+            <span class="text-white font-bold">Opinion</span>
+          </div>
+        </div>
+
+        <div class="flex gap-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white mb-4">
+              SHORT AND LONG TERM IMPACTS OF THE 2024 U.S. ELECTION
+            </h2>
+
+            <p class="text-white mb-6">
+              An opinion on the short and long term impacts of the 2024 U.S. Election.
+            </p>
+
+            <div class="bg-red-800 text-white font-bold px-5 py-3 inline-block">
+              POLITICS
+            </div>
+          </div>
+
+          <img
+            src="img/election-impact.png"
+            alt="Presidential comparison analysis" class="w-1/2 object-cover lg:block hidden" />
+        </div>
+        <img
+          src="img/election-impact.png"
+          alt="Presidential comparison analysis" class="w-full mt-20 object-cover lg:hidden block" />
+        </a>
+      </article>
+    </section>
+  </main>
+  </main>
+</body>
+
+</html>

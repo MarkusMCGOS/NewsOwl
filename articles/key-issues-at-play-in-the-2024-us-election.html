@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../tailwindcss.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .blink {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  <title>News Coverage</title>
+</head>
+
+<body>
+  <!-- WASSUP GUYS ITS PYTHON HERE -->
+  <main class="bg-zinc-900 min-h-screen" role="main" aria-label="Election News Coverage">
+    <header class="mb-8" role="banner">
+      <div class="flex items-center justify-center p-4 bg-white">
+        <a href="../index.html">
+          <img src="../NewsOwl.png" alt="NewsOwl Logo" class="w-96">
+        </a>
+      </div>
+
+      <div class="bg-zinc-600 p-4 w-full" role="complementary" aria-label="Live Election Results">
+        <div class="flex items-center gap-4">
+          <div class="bg-red-800 px-4 py-2 items-center gap-2 md:flex hidden" role="status" aria-live="polite">
+            <span class="w-4 h-4 bg-zinc-300 rounded-full blink" aria-hidden="true"></span>
+            <span class="text-white font-bold">LIVE</span>
+          </div>
+      
+          <div class="flex items-center justify-center flex-wrap text-white xl:text-2xl text-xl font-semibold mx-auto text-center">
+            <!-- PRESIDENT -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Presidential Results">
+                PRESIDENT: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">312</span>, <span class="text-blue-800">226</span>)
+              </span>
+            </div>
+            <!-- HOUSE -->
+            <div class="flex items-center justify-center mr-6 lg:mb-0 mb-2">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="House Results">
+                HOUSE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">220</span>, <span class="text-blue-800">215</span>)
+              </span>
+            </div>
+            <!-- SENATE -->
+            <div class="flex items-center justify-center mr-6">
+              <div class="w-7 h-7 bg-red-800 mr-2 flex items-center justify-center">
+                <span class="material-symbols-outlined font-bold">
+                  check
+                  </span>
+              </div>
+              <span aria-label="Senate Results">
+                SENATE: <span class="text-red-600">Republican</span>
+                <br class="sm:hidden">
+                (<span class="text-red-600">53</span>, <span class="text-blue-800">47</span>)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="bg-gray-400 p-8 mx-auto max-w-4xl" role="article" aria-label="News Article">
+        <div class="mx-auto">
+          <h1 class="text-4xl font-bold mb-4">EXPLAINER: Key issues at play in the 2024 U.S. election</h1>
+        </h1>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>By Luis Costa</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-2">
+            <span>Edited by Markus Lau</span>
+          </div>
+          <div class="flex items-center text-gray-600 mb-6">
+            <span>12/05/2024</span>
+          </div>
+          <p class="text-lg leading-relaxed mb-6 font-semibold">
+            These past 10 years or so, elections have been really intense; one side blinding themselves from the other and the other side doing the same thing. Here, I will bring you into the world of analytics to show you the key issues impacting voters this election.
+          </p>
+          <h1 class="text-3xl font-bold mb-4">Abortion</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            This is a topic of great debate between the Democrats and the Republicans. The Republicans believe that the act of abortion is the same thing as murder. On the other side, Democrats believe that before the fetus develops, it is the woman’s choice to have an abortion.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Publicly, Trump does not support abortion but he has promised that he will not nationally ban abortion; he will leave it up to the states to decide. Leaving it up to the states to decide might have been a really good stepping point for Trump to take certain Democratic voters. He may have taken some Democratic voters because many Democrats support abortion, and will want to still have it as an option. By leaving it up to states to choose, Trump is letting the supporters of abortion direct their focus to their state rather than to him.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Harris also has had some very strategically good choices on her side of the campaign as well. Harris is a strong supporter of abortion. The reason that Harris’ support for abortion is very impactful is because the support that she put in her campaign for abortion really cemented Democratic voters that might’ve switched to the Republican side.
+          </p>
+          <h1 class="text-3xl font-bold mb-4">Immigration</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            If you have kept up with recent news, you know that in this election, both campaigns debated a lot about immigration. Trump’s main message on immigration was that the migrants going to the US were “poisoning the blood.” Harris has had a very strong message that she supports legal immigration and promised to give out more than 250,000 visas if she were elected. 
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Trump’s strong dislike for immigration has impacted the election a lot. Firstly, Trump has promised a lot that he would create the largest deportation in history., America is going through a phase where there is a high unemployment rate. Trump has claimed that the problem of unemployment is the immigrants coming from other countries. Since immigrants have to work somewhere, Trump blame them for taking the jobs from American people. Trump has had a very big impact with what he said; the unemployment rates have certainly impacted the choice for which candidate to vote for many voters.
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Harris has also had a very big impact here in this area. Harris since the start of her campaign has supported immigration and defended immigrants. That choice that Harris made at the start of her campaign to defend immigrants is a huge factor to her voters. Harris sided with the immigrants, which obviously made the immigrants side with her. In Springfield, Ohio, there are many immigrants there and since Harris sided with them, that meant that Harris would completely decrease her chances of losing those districts. While that choice may not have profited her in Springfield, that choice helped the Democrats to defend those districts and keep some of the House of Representatives seats.
+          </p>
+          <h1 class="text-3xl font-bold mb-4">Gun Rights</h1>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Gun rights has been a very heated topic this election. Both sides have opposed each other, the Democrats want more restrictions while the Republicans want to keep it as-is. Each candidate has used gun rights as huge stepping points for the campaigns. 
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            Harris has used gun rights as a conductor to get more voters really well. The Democrats have been sending out a message that everyone has the right to own a gun, but gun ownership should still be regulated. That message that the Democrats send about gun rights impacts voters a lot because the Democrats used it very efficiently in the campaign process. 
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            If the Democrats blasted the message that guns are dangerous more times during the campaign, that may have scared some voters into voting for them. It is the same thing that Trump did with the message of immigrants destroying the economy. Trump said that the immigrants were destroying the economy so many times that his supporters started believing him. Harris also supports the idea of making background checks on all gun owners to regulate the process. Trump made very big shockwaves in this area of politics as well. Trump, although he does not support new gun restrictions, he has advocated the background checks that Harris has proposed. Trump’s choice of supporting the background checks was awesome to his campaign for various reasons.  
+          </p>
+          <p class="text-lg leading-relaxed mb-6 font-semibold ml-8">
+            One of those main reasons Trump’s choice was good was because he agreed with the Democrats’ idea of background checks. Supporting the Democrats’ idea made other Democrats think that he shares their views. That change of mind Trump had also probably made other Democrats want gun regulations, but still want to continue to own their guns; which might have made some Democratic voters vote Trump instead of Harris. 
+          </p>
+        </div>
+      </section>
+    
+  </main>
+  </main>
+</body>
+
+</html>
